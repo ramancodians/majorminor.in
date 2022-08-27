@@ -1,49 +1,74 @@
 import styled from "styled-components"
+import AboutUs from "../comp/AboutUs"
+import LatestEvents from "../comp/LatestEvents"
 
 const Wrap = styled.div`
-  text-align: center;
-  padding-top: 100px 20px 20px 20px;
-  min-height: 100vh;
-  background: #333 center no-repeat;
-  background-image: url("/images/mobilebg.jpg");
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  img {
-    width: auto;
-    height: 60px;
-  }
-  h1 {
-    font-size: 80px;
-    padding: 0px;
-    margin: 0px;
-  }
-  h2 {
-    color: red;
-  }
+  
 `
 
 const InnerWrap = styled.div`
-  padding: 20px 40px;
-  max-width: 500px;
-  background: rgba(255, 255, 255, 0.8);
-  border-radius: 20px;
-  margin: 20px;
+  margin: 150px 0px;
 `
+
+const Hero = styled.div`
+  background: #333 center no-repeat;
+  background-image: url("/images/header-main-2.jpg");
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+  background-position: fixed;
+  padding: 20px;
+  position: relative;
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0, 0.3);
+    position: absolute;
+    z-index: 0;
+  }
+  h1 {
+    position: relative;
+    color: #fff;
+    font-size: 40px;
+    text-shadow: 0px 0px 8px rgba(150, 150, 150, 1);
+    z-index: 1;
+    line-height: 1.4em;
+  }
+`
+
+const JoinBTN = styled.button`
+  padding: 15px 20px;
+  border: none;
+  background: #222;
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+`
+
 
 export default function Home() {
   return (
     <Wrap>
-      <InnerWrap>
-        <h1>🚧</h1>
-        <h2>Site is Under Contruction</h2>
-        <h3>
-          Our well trained and well fed monkeys are working
-          really hard in the cubical cages to make this site up for you.
-        </h3>
-        <p>Team: majorminor.in</p>
-      </InnerWrap>
+      <Hero>
+        <InnerWrap>
+          <h1>
+            Join the
+            <br />
+            Biggest events
+            <br />
+             happening in
+            <br />
+            Raipur
+          </h1>
+          <JoinBTN>
+            Book Now
+          </JoinBTN>
+        </InnerWrap>
+      </Hero>
+      <LatestEvents />
+      <AboutUs />
     </Wrap>
   )
 }
