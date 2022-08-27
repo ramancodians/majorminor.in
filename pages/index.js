@@ -4,7 +4,7 @@ import styled from "styled-components"
 
 const Wrap = styled.div`
   text-align: center;
-  padding-top: 100px;
+  padding-top: 100px 20px 20px 20px;
   min-height: 100vh;
   background: #333 center no-repeat;
   background-image: url("/images/mobilebg.jpg");
@@ -31,6 +31,7 @@ const InnerWrap = styled.div`
   max-width: 500px;
   background: rgba(255, 255, 255, 0.8);
   border-radius: 20px;
+  margin: 20px;
 `
 
 export default function Home() {
