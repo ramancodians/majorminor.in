@@ -78,7 +78,7 @@ export default function Home() {
 
             </iframe>
         </div>
-        <script src="https://player.vimeo.com/api/player.js"></script>
+        <script src="https://player.vimeo.com/api/player.js" async ></script>
         {/* <InnerWrap>
           <h1>
             Join the
