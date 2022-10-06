@@ -25,6 +25,17 @@ const BhaiLele = styled.div`
   }
 `
 
+const Footer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  > img {
+    max-height: 50px;
+    width: auto;
+    margin: 0px auto;
+  }
+`
+
 const AboutUs = (props) => (
   <Wrap>
     <img src="/images/bg2.jpg" alt="" />
@@ -41,10 +52,9 @@ const AboutUs = (props) => (
         Book Now
       </button>
     </BhaiLele>
-    <div>
+    <Footer>
       <img src="/images/mm_grunge_main.png" alt="" />
-    </div>
-    
+    </Footer>
   </Wrap>
 )
 
