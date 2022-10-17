@@ -1,3 +1,4 @@
+import Head from "next/head"
 import styled from "styled-components"
 import AboutUs from "../comp/AboutUs"
 import LatestEvents from "../comp/LatestEvents"
@@ -29,7 +30,6 @@ const Hero = styled.div `
   iframe {
     position: block;
     width: 100%;
-    border: 1px solid red;
     height: 100vh;
   }
   /* &::after {
@@ -67,6 +67,13 @@ const JoinBTN = styled.button `
 export default function Home() {
   return (
     <Wrap>
+      <Head>
+        <script>
+          {`
+            window.location.href = "https://majorminor.mojo.page/mmselect"
+          `}
+        </script>
+      </Head>
       <Hero>
         <div style={{ padding: "177.78% 0 0 0", position: "relative" }}>
           <iframe
