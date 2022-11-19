@@ -70,7 +70,7 @@ export default function Home() {
       <Head>
         <script>
           {`
-            window.location.href = "https://majorminor.mojo.page/mmselect"
+            window.location.href = "https://majorminor.mojo.page/sundowner"
           `}
         </script>
       </Head>
